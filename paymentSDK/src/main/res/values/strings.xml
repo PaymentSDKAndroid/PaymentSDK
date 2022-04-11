@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="card_number">Card Number</string>
+    <string name="name_on_card">Name on card</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="enter_card_number">Enter Card Number</string>
+    <string name="enter_name_on_card">Enter Name on card</string>
+    <string name="enter_expiry_date">Enter Expiry date</string>
+    <string name="enter_cvv">Enter CVV</string>
+    <string name="security_code">Security code</string>
+    <string name="pay">Pay</string>
+    <string name="submit">Submit</string>
+    <string name="cvv">CVV</string>
+    <string name="expiry">Expiry</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="invalid_card_number">Invalid card number</string>
+    <string name="invalid_card_cvv">Invalid card cvv</string>
+    <string name="invalid_card_expiry">Invalid card expiry</string>
+    <string name="card_expiry">Expiry</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="payment">Payment</string>
+    <string name="expiration">Expiration</string>
+    <string name="default_cardNumber">XXXX XXXX XXXX XXXX</string>
+    <string name="default_cardCvv">XXX</string>
+    <string name="default_cardExpiry">MM/YY</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="enter_valid_email">Please enter valid email</string>
+</resources>

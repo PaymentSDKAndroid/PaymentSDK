@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_card">#3B67C1</color>
+    <color name="color_card_text">#74FFFFFF</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="default_icon_color">#555555</color>
+    <color name="error_color">#FF2600</color>
+    <color name="text_color">#FF000000</color>
+    <color name="text_hint_color">#D1D1D6</color>
+    <string name="cancel">Cancel</string>
+    <string name="card_expiry">Expiry</string>
+    <string name="card_number">Card Number</string>
+    <string name="cvv">CVV</string>
+    <string name="default_cardCvv">XXX</string>
+    <string name="default_cardExpiry">MM/YY</string>
+    <string name="default_cardNumber">XXXX XXXX XXXX XXXX</string>
+    <string name="enter_card_number">Enter Card Number</string>
+    <string name="enter_cvv">Enter CVV</string>
+    <string name="enter_expiry_date">Enter Expiry date</string>
+    <string name="enter_name_on_card">Enter Name on card</string>
+    <string name="enter_valid_email">Please enter valid email</string>
+    <string name="expiration">Expiration</string>
+    <string name="expiry">Expiry</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="invalid_card_cvv">Invalid card cvv</string>
+    <string name="invalid_card_expiry">Invalid card expiry</string>
+    <string name="invalid_card_number">Invalid card number</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="name_on_card">Name on card</string>
+    <string name="ok">OK</string>
+    <string name="pay">Pay</string>
+    <string name="payment">Payment</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="security_code">Security code</string>
+    <string name="submit">Submit</string>
+    <string name="temp">abc</string>
+    <declare-styleable name="PaymentCard">
+        <!-- The color of the icons -->
+        <attr format="color|reference" name="iconColor"/>
+        <!-- The enabled state of the edit text fields -->
+        <attr format="boolean" name="enabled"/>
+        <!-- The color of the text -->
+        <attr format="color|reference" name="textColor"/>
+        <!-- The color of the hint -->
+        <attr format="color|reference" name="hintColor"/>
+        <!-- The color of card background -->
+        <attr format="color|reference" name="themeColor"/>
+        <!-- Change header -->
+        <attr format="reference" name="setHeader"/>
+    </declare-styleable>
+</resources>

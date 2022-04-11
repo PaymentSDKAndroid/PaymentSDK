@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="18dp"
+            android:paddingTop="24dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="24dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewPaymentHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment"
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewPaymentCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/color_card"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewPaymentHeader">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayoutCardViews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageViewCardBrand"
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_deafult_card"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewCardNumberText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/card_number"
+                        android:textColor="@color/color_white"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageViewCardBrand" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewCardNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/default_cardNumber"
+                        android:textColor="@color/color_white"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@id/textViewCardNumberText"
+                        app:layout_constraintStart_toStartOf="@id/textViewCardNumberText"
+                        app:layout_constraintTop_toBottomOf="@id/textViewCardNumberText" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewCardExpirationText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/expiry_date"
+                        android:textColor="@color/color_white"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toStartOf="@id/textViewCardCvvText"
+                        app:layout_constraintHorizontal_weight="0.25"
+                        app:layout_constraintStart_toStartOf="@id/textViewCardNumber"
+                        app:layout_constraintTop_toBottomOf="@id/textViewCardNumber" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewCardExpiration"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/default_cardExpiry"
+                        android:textColor="@color/color_white"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/textViewCardExpirationText"
+                        app:layout_constraintStart_toStartOf="@id/textViewCardExpirationText"
+                        app:layout_constraintTop_toBottomOf="@id/textViewCardExpirationText" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewCardCvvText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="@string/cvv"
+                        android:textColor="@color/color_white"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_weight="0.75"
+                        app:layout_constraintStart_toEndOf="@id/textViewCardExpirationText"
+                        app:layout_constraintTop_toBottomOf="@id/textViewCardNumber"
+                        app:layout_constraintTop_toTopOf="@id/textViewCardExpirationText" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewCardCvv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:text="@string/default_cardCvv"
+                        android:textColor="@color/color_white"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="@id/textViewCardCvvText"
+                        app:layout_constraintStart_toStartOf="@id/textViewCardCvvText"
+                        app:layout_constraintTop_toBottomOf="@id/textViewCardExpirationText" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/ic_deafult_card"
+                android:drawablePadding="8dp"
+                android:hint="@string/card_number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColorHint="@color/text_hint_color"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardViewPaymentCard" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextCardExpiry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/ic_expiry_date"
+                android:drawablePadding="8dp"
+                android:hint="@string/mm_yy"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textColorHint="@color/text_hint_color"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@id/editTextCvv"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@id/editTextCardNumber"
+                app:layout_constraintTop_toBottomOf="@id/editTextCardNumber" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextCvv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/ic_cvv"
+                android:drawablePadding="8dp"
+                android:hint="@string/cvv"
+                android:imeOptions="actionDone"
+                android:inputType="numberPassword"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textColorHint="@color/text_hint_color"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@id/editTextCardNumber"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@id/editTextCardExpiry"
+                app:layout_constraintTop_toTopOf="@id/editTextCardExpiry" />
+
+            <ProgressBar
+                android:id="@+id/progressBarPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/color_card"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonPay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/color_card"
+                android:padding="14dp"
+                android:text="@string/pay"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/editTextCvv"
+                app:layout_constraintStart_toStartOf="@id/editTextCardExpiry"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCardExpiry"
+                app:layout_constraintVertical_bias="1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

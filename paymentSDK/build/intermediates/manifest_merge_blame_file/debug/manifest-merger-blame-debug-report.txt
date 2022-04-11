@@ -1,0 +1,15 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.paymentsdk" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->C:\Fenil\AndroidProjects\PaymentSDKApp\Payment_SDK\paymentSDK\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="32" />
+7-->C:\Fenil\AndroidProjects\PaymentSDKApp\Payment_SDK\paymentSDK\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.INTERNET" />
+9-->C:\Fenil\AndroidProjects\PaymentSDKApp\Payment_SDK\paymentSDK\src\main\AndroidManifest.xml:5:5-66
+9-->C:\Fenil\AndroidProjects\PaymentSDKApp\Payment_SDK\paymentSDK\src\main\AndroidManifest.xml:5:22-64
+10
+11</manifest>

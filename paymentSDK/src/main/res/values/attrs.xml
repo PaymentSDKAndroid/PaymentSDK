@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PaymentCard">
+        <!-- The color of the icons -->
+        <attr name="iconColor" format="color|reference"/>
+        <!-- The enabled state of the edit text fields -->
+        <attr name="enabled" format="boolean"/>
+        <!-- The color of the text -->
+        <attr name="textColor" format="color|reference"/>
+        <!-- The color of the hint -->
+        <attr name="hintColor" format="color|reference"/>
+        <!-- The color of card background -->
+        <attr name="themeColor" format="color|reference"/>
+        <!-- Change header -->
+        <attr name="setHeader" format="reference"/>
+    </declare-styleable>
+
+</resources>
