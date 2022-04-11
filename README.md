@@ -8,7 +8,7 @@ PaymentSDK
 
 To add Payment SDK to your project 
 
-  add maven
+  add maven(Project level gradle or to settings gradle if you are using latest gradle structure)
  ```
   allprojects {
 		repositories {
