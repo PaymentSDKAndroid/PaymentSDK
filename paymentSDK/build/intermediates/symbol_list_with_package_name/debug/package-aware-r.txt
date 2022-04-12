@@ -55,6 +55,7 @@ id textViewPaymentHeader
 id year_picker
 layout card_expiry
 layout payment_card
+string api_key_does_not_exists
 string cancel
 string card_expiry
 string card_number
@@ -81,5 +82,5 @@ string payment
 string payment_successful
 string security_code
 string submit
-string temp
+string token_data_not_found
 styleable PaymentCard enabled hintColor iconColor setHeader textColor themeColor

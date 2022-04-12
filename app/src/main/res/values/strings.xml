@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PaymentSDK</string>
+    <string name="server_error">Server error</string>
 </resources>

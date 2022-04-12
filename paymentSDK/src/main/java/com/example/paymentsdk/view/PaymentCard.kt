@@ -181,17 +181,18 @@ class PaymentCard constructor(context: Context, attrs: AttributeSet?, defStyle: 
         paymentCardBinding.progressBarPayment.visibility = VISIBLE
         paymentRepository.getPaymentApiKey(jsonObject, object : PaymentCallback {
             override fun onSuccess(jsonObject: JsonObject?) {
+                paymentCardBinding.progressBarPayment.visibility = GONE
                 if (jsonObject != null && jsonObject.has("apikey")) {
                     val apiKey = jsonObject.get("apikey").asString
                     userModel.strApiKey = apiKey
                     getToken()
-                    paymentCardBinding.progressBarPayment.visibility = GONE
                 } else {
-                    cardCallback.onError(InvalidResponseException("apikey is not valid"))
+                    cardCallback.onError(InvalidResponseException(context.getString(R.string.api_key_does_not_exists)))
                 }
             }
 
             override fun onError(throwable: Throwable?) {
+                paymentCardBinding.progressBarPayment.visibility = GONE
                 cardCallback.onError(throwable)
             }
         })
@@ -209,19 +210,19 @@ class PaymentCard constructor(context: Context, attrs: AttributeSet?, defStyle: 
         paymentCardBinding.progressBarPayment.visibility = VISIBLE
         paymentRepository.getPaymentToken(plainTextJson, object : PaymentCallback {
             override fun onSuccess(jsonObject: JsonObject?) {
+                    paymentCardBinding.progressBarPayment.visibility = GONE
                 if (jsonObject != null && jsonObject.has("token")) {
                     val token = jsonObject.get("token").asString
                     userModel.strToken = token
                     cardCallback.onSuccess(userModel = userModel)
-                    Toast.makeText(context, "Token: $token", Toast.LENGTH_SHORT).show()
-                    paymentCardBinding.progressBarPayment.visibility = GONE
                 } else {
-                    cardCallback.onError(InvalidResponseException("token is not valid"))
+                    cardCallback.onError(InvalidResponseException(context.getString(R.string.token_data_not_found)))
                 }
             }
 
             override fun onError(throwable: Throwable?) {
-
+                paymentCardBinding.progressBarPayment.visibility = GONE
+                cardCallback.onError(throwable)
             }
 
         })

@@ -54,6 +54,7 @@ int id textViewPaymentHeader 0x0
 int id year_picker 0x0
 int layout card_expiry 0x0
 int layout payment_card 0x0
+int string api_key_does_not_exists 0x0
 int string cancel 0x0
 int string card_expiry 0x0
 int string card_number 0x0
@@ -80,7 +81,7 @@ int string payment 0x0
 int string payment_successful 0x0
 int string security_code 0x0
 int string submit 0x0
-int string temp 0x0
+int string token_data_not_found 0x0
 int[] styleable PaymentCard { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable PaymentCard_enabled 0
 int styleable PaymentCard_hintColor 1

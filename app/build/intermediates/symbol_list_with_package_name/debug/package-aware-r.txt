@@ -3249,6 +3249,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string androidx_startup
+string api_key_does_not_exists
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -3377,9 +3378,10 @@ string payment
 string payment_successful
 string search_menu_title
 string security_code
+string server_error
 string status_bar_notification_info_overflow
 string submit
-string temp
+string token_data_not_found
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

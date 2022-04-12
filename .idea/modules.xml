@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PaymentSDK.iml" filepath="$PROJECT_DIR$/.idea/modules/PaymentSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PaymentSDK.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PaymentSDK.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/paymentSDK/PaymentSDK.paymentSDK.iml" filepath="$PROJECT_DIR$/.idea/modules/paymentSDK/PaymentSDK.paymentSDK.iml" />
+    </modules>
+  </component>
+</project>

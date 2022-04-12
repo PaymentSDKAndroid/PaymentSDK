@@ -26,4 +26,7 @@
     <string name="default_cardExpiry">MM/YY</string>
     <string name="payment_successful">Payment Successful</string>
     <string name="enter_valid_email">Please enter valid email</string>
+    <string name="api_key_does_not_exists">Api key does not exists</string>
+    <string name="token_data_not_found">Token data does not exists</string>
+
 </resources>
